@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Блок подачи заявок</title>
+        <meta charsel="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+  <body>
+    <form class="block" onsubmit="change(this)" action="index_2.html" >
+        <div class="vector"></div>
+        <div class="block_1">
+            <h2>Шаг 1.</h2>
+        </div>    
+        <div class="block_2">
+            <label for="countries">Выберите страну</label>
+        </div>
+        <div>
+            <select class="block_2_1" name="countries" id="countries" >
+                <option value="RU" >Россия</option> 
+                <option value="DE" >Германия</option>
+                <option value="EE" >Эстония</option>
+            </select>
+        </div>
+
+        <div class="block_3" >
+            <label for="types">Тип визы</label>
+        </div>
+        <div>
+            <select class="block_3_1" name="types" id="types">
+                <option value="bis" name="Деловая виза" prace="20,80">Деловая виза</option>
+                <option value="tur" name="Туристическая виза" prace="10,30">Туристическая виза</option>
+                <option value="trz" name="Транзитная виза" prace="50,50">Транзитная виза</option>
+            </select>
+        </div>
+
+        <div class="block_4">
+            <label for="entry">Въезд</label>
+        </div>
+        <div>   
+            <input class="block_4_1"type="date" id="entry" name="entry" value="2019-11-30">
+        </div>
+
+        <div class="block_5">
+            <label for="departure">Выезд</label>
+        </div>
+        <div>
+            <input class="block_5_1"type="date" id="departure" name="departure" value="2020-01-30">
+        </div>
+
+        <div class="block_6">
+            <label for="try">Количество заездов</label>
+        </div>
+        <div>
+            <select class="block_6_1" name="try" id="try">
+                <option value="single">Однократный заезд</option>
+                <option value="multi">Многоразовый заезд</option>
+                <option value="permanent">Постоянный заезд</option>
+            </select>
+        </div>  
+
+        <div class="block_7">
+            <label for="timespent">Время обработки</label>
+        </div>
+        <div>
+            <select class="block_7_1" name="timespent" id="timespent">
+                <option value="fast">3 рабочих дня</option>
+                <option value="middle">10 рабочих дней</option>
+                <option value="slow">15-30 рабочих дней</option>
+            </select>
+        </div>   
+
+        <div class="blockresult">
+            <div><p>Предварительная<br/>стоимость:</p></div>
+            <div id="result"> </div>
+        </div>
+        <button  class="block_10" type="submit" formaction="form2.html" formmethod="GET">Продолжить ></button>
+    </form>
+    <script src="Js/data.js"></script>
+    <script src="Js/script.js"></script>
+  </body>
+</html>

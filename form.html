@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleform.css">
+    <title>Блок подачи заявок</title>
+</head>
+<body>
+    <div class="formcontainer">
+        <form action="#" class="form" onsubmit="change(this)">
+            <h2 class="title">Шаг 1.</h2>
+            <div class="fieldset">
+                <div class="field cell">
+                    <label for="countries">Выберите страну</label>
+                    <select name="countries" id="countries">
+                        <option value="RU" >Россия</option> 
+                        <option value="DE" >Германия</option>
+                        <option value="EE" >Эстония</option>
+                    </select>
+                </div>
+                <div class="field cell">
+                    <label for="types">Тип визы</label>
+                    <select name="types" id="types">
+                        <option value="bis" name="Деловая виза" prace="20,80">Деловая виза</option>
+                        <option value="tur" name="Туристическая виза" prace="10,30">Туристическая виза</option>
+                        <option value="trz" name="Транзитная виза" prace="50,50">Транзитная виза</option>
+                    </select>
+                </div>
+                <span class="cell"></span>
+            </div>
+            <div class="fieldset">
+                <div class="fieldset cell">
+                    <div class="field cell">
+                        <label for="entry">Въезд</label>
+                        <input type="date" id="entry" name="entry" value="2019-11-30">
+                    </div>
+                    <div class="field cell">
+                        <label for="departure">Выезд</label>
+                        <input type="date" id="departure" name="departure" value="2020-01-30">
+                    </div>
+                </div>
+                <div class="field cell">
+                    <div class="field cell">
+                        <label for="try">Количество заездов</label>
+                        <select name="try" id="try">
+                            <option value="single">Однократный заезд</option>
+                            <option value="multi">Многоразовый заезд</option>
+                            <option value="permanent">Постоянный заезд</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field cell">
+                    <label for="timespent">Время обработки</label>
+                    <select name="timespent" id="timespent">
+                        <option value="fast">3 рабочих дня</option>
+                        <option value="middle">10 рабочих дней</option>
+                        <option value="slow">15-30 рабочих дней</option>
+                    </select>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="result">
+                    <div>"Предварительная"<br>"стоимость:"</div>
+                    <div class="result-value" id="result"></div>
+                </div>
+                <button  class="primary" type="submit" formaction="form2.html">Продолжить ></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

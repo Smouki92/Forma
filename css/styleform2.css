@@ -1,0 +1,136 @@
+/*Обнуление*/ 
+*{padding: 0; margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+/*------------------*/
+
+
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+body {
+    margin: 0;
+    font: 400 20px/23px Roboto, sans-serif;
+    color: #fff;
+}
+select, input {
+    color: #fff;
+    background-color: #273795;
+    border-radius: 4px;
+    padding: 0 0 0 15px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    height: 40px;
+}
+.formcontainer {
+    padding: 0 2% 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+.form{
+    position: relative;
+    max-width: 1360px;
+    width: 100%;
+    background-color: #3748AA;
+    padding: 100px 125px;
+    margin: 50px;
+}
+.form::before {
+    position: absolute;
+    content: '';
+    border-style: solid;
+    border-width: 40px 0 0 40px;
+    border-color: transparent transparent transparent #3748AA;
+    left: 125px;
+    top: -40px;
+    align-self: flex-start;
+}
+.username {
+    display: inline-block;
+    margin-bottom: 30px;
+    border-bottom: 3px solid;
+    line-height: 1.5;
+}
+#ber {
+    max-width: 156px;
+}
+#count {
+    max-width: 350px;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    margin-bottom: 10px;
+}
+.fieldset {
+    display: flex;
+}
+.cell {
+    flex: 1 1 0;
+}
+.cell + .cell {
+    margin: 0 0 0 30px;
+}
+@media screen and (max-width: 1500px) {
+    .fieldset {
+        flex-direction: column;
+    }
+    .fieldset + .fieldset {
+        margin-top: 0;
+    }
+    .cell + .cell {
+        margin: 30px 0 0 0;
+    }
+}
+.rectangle {
+    margin-top: 40px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.buttons {
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 45px;
+}
+.end + .next {
+    margin: 0 0 0 30px;
+}
+.end {
+    width: 189.4px;
+    height: 61.17px;
+    border-radius: 4px;
+    background: #3748AA;
+    border: 1px solid #7182ED;
+    box-shadow: 0px 20px 40px #0B1A73;
+}
+.next {
+    width: 189.76px;
+    height: 61.17px;
+    border-radius: 4px;
+    background-color: #0BAF4F;
+    box-shadow: 0px 20px 40px #0B1A73;
+}

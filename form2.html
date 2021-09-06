@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleform2.css">
+    <title>Блок подачи заявок</title>
+</head>
+<body>
+<div class="formcontainer">
+    <form action="#" class="form" onsubmit="change(this)">
+        <h2 class="title">Шаг 2.</h2>
+        <div class="username" id="resname">Пользователь</div>
+        <div class="fieldset">
+            
+            <div class="field cell">
+                <label for="first_name">Имя</label>
+                <input class="nameinp" id="first_name" type="text" placeholder="Введите Имя">
+            </div>
+
+            <div class="field cell">
+                <label for="last_name">Фамилия</label>
+                <input class="lnameinp" id="last_name" type="text" placeholder="Введите Фамилию">
+            </div>
+
+            <div class="field cell" id="ber">
+                <label for="berthday">Дата рождения</label>
+                <input class="berthdayinp" id="berthday" type="date" value="2020-01-30">
+            </div>
+
+            <div class="field cell" id="count">
+                <label for="countries">Гражданство</label>
+                <select class="contriesinp" id="country" name="countries">
+                    <option value="DE" >Германия</option> 
+                    <option value="UA" >Украина</option>
+                    <option value="EE" >Эстония</option>
+                    <option value="RU" >Россия</option>
+                </select>
+
+            </div>
+
+        </div>
+        <div class="rectangle">
+            <h6>Виза</h6>
+            <div class="row">
+                <div >Страна: <span id="rescountries"></span></div>
+                <div >Вид визы: <span id="restypes"></span></div>
+                <div >Въезд: <span id="resentry"></span></div>
+                <div >Время обработки: <span id="restimespent"></span></div>
+            </div>
+            <div class="price">Предварительная<br/>стоимость:<span id="resprice"></span></div> 
+        </div>
+        <div class="buttons">
+            <button class="end" type="submit" formaction="index_1.html">  Вернуться </button>
+            <button class="next" type="submit">  Готово </button>
+        </div>
+    </form>
+</div>
+    <script src="Js/data.js"></script>
+    <script src="Js/script2.js"></script>
+</body>
+</html>
