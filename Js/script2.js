@@ -34,7 +34,8 @@ function getData() {
         
         const tryId = params.get("try")
 
-        resprice.innerHTML = calculate(countriesId, typesId, tryId, timespentId)
+        const price = calculate(countriesId, typesId, tryId, timespentId)
+         resprice.innerHTML =  '\u20AC' + price 
     } 
 }
 

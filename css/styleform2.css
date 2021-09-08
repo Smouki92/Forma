@@ -134,3 +134,29 @@ select, input {
     background-color: #0BAF4F;
     box-shadow: 0px 20px 40px #0B1A73;
 }
+h6 {
+    margin: 40px 0 0 65px;
+}
+.row {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+.mid {
+    margin-bottom: 10px;
+}
+.toprow + .toprow {
+    margin-left: 60px;
+}
+.result {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 50px 0 40px 65px;
+}
+.result-value {
+    font-weight: 500;
+    font-size: 30px;
+    color: #ff6700;
+    margin-left: 123px;
+}

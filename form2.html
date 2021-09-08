@@ -40,23 +40,32 @@
             </div>
 
         </div>
-        <div class="rectangle">
+        <div div class="rectangle">
             <h6>Виза</h6>
             <div class="row">
-                <div >Страна: <span id="rescountries"></span></div>
-                <div >Вид визы: <span id="restypes"></span></div>
-                <div >Въезд: <span id="resentry"></span></div>
-                <div >Время обработки: <span id="restimespent"></span></div>
+                <div class="toprow">
+                    <div class="mid">Страна: <span id="rescountries"></span></div>
+                    <div class="low">Вид визы: <span id="restypes"></span></div>
+                </div>
+                <div class="toprow">
+                    <div class="mid">Въезд: <span id="resentry"></span></div>
+                    <div class="low">Время обработки: <span id="restimespent"></span></div>
+                </div>
             </div>
-            <div class="price">Предварительная<br/>стоимость:<span id="resprice"></span></div> 
+            <div class="result">
+                <div>Предварительная<br>стоимость:</div>
+                <div class="result-value" id="resprice"></div>
+            </div>
         </div>
-        <div class="buttons">
-            <button class="end" type="submit" formaction="form.html">  Вернуться </button>
-            <button class="next" type="submit">  Готово </button>
+            <div class="buttons">
+                <button class="end" type="submit" formaction="form.html">  Вернуться </button>
+                <button class="next" type="submit">  Готово </button>
+            </div>
         </div>
     </form>
 </div>
     <script src="Js/data.js"></script>
+    <script src="Js/script.js"></script>
     <script src="Js/script2.js"></script>
 </body>
 </html>
