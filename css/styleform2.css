@@ -72,24 +72,32 @@ h6 {
 }
 .row {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
     margin-left: 65px;
 }
 .mid {
     margin-bottom: 10px;
 }
-.toprow + .toprow {
-    margin-left: 60px;
+.leftrow {
+    min-width: 250px;
+    margin-bottom: 30px;
+    margin-right: 100px;
 }
+
 .result {
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
     margin: 50px 0 40px 65px;
 }
+.result-text {
+    min-width: 390px;
+    margin-bottom: 10px;
+}
 .result-value {
     font-weight: 500;
     font-size: 30px;
     color: #ff6700;
-    margin-left: 123px;
+   
 }
