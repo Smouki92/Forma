@@ -31,11 +31,11 @@
             </div>
             <div class="fieldset">
                 <div class="fieldset cell">
-                    <div class="field cell">
+                    <div class="field cell" id="ent">
                         <label for="entry">Въезд</label>
                         <input type="date" id="entry" name="entry" value="2019-11-30">
                     </div>
-                    <div class="field cell">
+                    <div class="field cell" id="dep">
                         <label for="departure">Выезд</label>
                         <input type="date" id="departure" name="departure" value="2020-01-30">
                     </div>
@@ -61,12 +61,16 @@
             </div>
             <div class="actions">
                 <div class="result">
-                    <div>"Предварительная"<br>"стоимость:"</div>
+                    <div>Предварительная<br>стоимость:</div>
                     <div class="result-value" id="result"></div>
                 </div>
-                <button class="primary" type="submit" formaction="form2.html">Продолжить ></button>
+                <div class="button">
+                    <button class="primary" type="submit" formaction="form2.html">Продолжить ></button>
+                </div>
             </div>
         </form>
     </div>
+    <script src="Js/data.js"></script>
+    <script src="Js/script.js"></script>
 </body>
 </html>
